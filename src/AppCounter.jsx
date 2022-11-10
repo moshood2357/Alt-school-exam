@@ -57,11 +57,11 @@ const reducer = (state, action) => {
 function AppCounter() {
   const [count, dispatch] = useReducer(reducer, initialState)
   return (
-    <div>
+    <div className = 'container'>
       <div>Count - {count.firstCounter}</div>
-      <button onClick = {() => dispatch({type:'increment', value: 1})}>Increment</button>
-      <button onClick = {() => dispatch({type:'Decrement', value: 1})}>Decrement</button>
-      <button onClick = {() => dispatch({type:'Reset'})}>Reset</button>
+      <button className = 'btn' onClick = {() => dispatch({type:'increment', value: 1})}>Increment</button>
+      <button className = 'btn' onClick = {() => dispatch({type:'Decrement', value: 1})}>Decrement</button>
+      <button className = 'btn' onClick = {() => dispatch({type:'Reset'})}>Reset</button>
     </div>
     
   )
