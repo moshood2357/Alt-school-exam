@@ -46,7 +46,7 @@ const reducer = (state, action) => {
       return {firstCounter: state.firstCounter + action.value}
     case 'Decrement':
       // return state - 1
-      return {firstCounter: state.firstCounter + action.value}
+      return {firstCounter: state.firstCounter - action.value}
     case 'Reset':
       return initialState
     case 'Default':
